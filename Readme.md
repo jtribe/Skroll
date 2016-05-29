@@ -20,4 +20,4 @@ http://spin.atomicobject.com/2014/03/05/uiscrollview-autolayout-ios/
 - in viewWillAppear set constraint constant to 0
 - This will resize everything :-)
 
-[demo](https://github.com/jtribe/Skroll/blob/master/video.gif)
+![alt demo](https://github.com/jtribe/Skroll/blob/master/video.gif)

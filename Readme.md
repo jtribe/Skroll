@@ -1,6 +1,6 @@
 # A story about using storyboard
 
-## Task: Create a scroll view with a content view
+## Task: Create a scroll view with a content view. Content view contains a list of views (like a table view / vert stack)
 
 - scroll view is the main view (not sure if that's the best idea)
 - add view to scroll view (the content view)
@@ -9,8 +9,8 @@
 - make each view vertically spaced to view above 
 
 ### IMPORTANT
-- the bottom constaint from the content view to the scrollview must be marked as remove at build time
-- Make the last view constraint to the bottom of the content view. This way the content view will resize itself and make things scrollable
+- the hight constaint for the content view (with priority 250) must be marked as "remove at build time".
+- the last view (bottom of the list) must have a constraint to the bottom of the content view. This way the content view will resize itself and make things scrollable
 
 http://spin.atomicobject.com/2014/03/05/uiscrollview-autolayout-ios/
 

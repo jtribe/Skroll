@@ -22,7 +22,7 @@
                                 <rect key="frame" x="4" y="0.0" width="592" height="600"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Uw7-0q-x3a" userLabel="Content View">
-                                        <rect key="frame" x="0.0" y="0.0" width="592" height="1100"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="592" height="850"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iih-V0-S8T" userLabel="1View">
                                                 <rect key="frame" x="114" y="37" width="365" height="97"/>
@@ -44,20 +44,20 @@
                                                     <constraint firstAttribute="width" constant="365" id="Z6n-FS-qmz"/>
                                                 </constraints>
                                             </view>
-                                            <view contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Tjq-ue-xvp" userLabel="3View">
-                                                <rect key="frame" x="114" y="247" width="365" height="800"/>
-                                                <color key="backgroundColor" cyan="0.28620505439999999" magenta="0.0" yellow="0.0" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="800" id="3Ct-n8-s0d"/>
-                                                    <constraint firstAttribute="width" constant="365" id="LcV-Iq-j4S"/>
-                                                </constraints>
-                                            </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Z21-bh-VrR" userLabel="4View">
-                                                <rect key="frame" x="114" y="1060" width="365" height="40"/>
+                                                <rect key="frame" x="114" y="810" width="365" height="40"/>
                                                 <color key="backgroundColor" red="0.0" green="0.50196081399917603" blue="0.50196081399917603" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="ZDx-9p-but"/>
                                                     <constraint firstAttribute="width" constant="365" id="n1I-kB-yj2"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Tjq-ue-xvp" userLabel="3View">
+                                                <rect key="frame" x="114" y="247" width="365" height="550"/>
+                                                <color key="backgroundColor" cyan="0.28620505439999999" magenta="0.0" yellow="0.0" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="550" id="3Ct-n8-s0d"/>
+                                                    <constraint firstAttribute="width" constant="365" id="LcV-Iq-j4S"/>
                                                 </constraints>
                                             </view>
                                         </subviews>

@@ -1,4 +1,4 @@
-# A story about using storyboard
+# A story about using storyboard for scrollviews
 
 ## Task: Create a scroll view with a content view. Content view contains a list of views (like a table view / vert stack)
 

@@ -9,7 +9,7 @@
 - make each view vertically spaced to view above 
 
 ### IMPORTANT
-- the hight constaint for the content view (with priority 250) must be marked as "remove at build time".
+- the height constaint for the content view (with priority 250) must be marked as "remove at build time".
 - the last view (bottom of the list) must have a constraint to the bottom of the content view. This way the content view will resize itself and make things scrollable
 
 http://spin.atomicobject.com/2014/03/05/uiscrollview-autolayout-ios/

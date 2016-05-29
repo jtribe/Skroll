@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E36b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="hZi-tp-o1L">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="hZi-tp-o1L">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="x45-LG-HiX">
             <objects>
-                <viewController id="hZi-tp-o1L" sceneMemberID="viewController">
+                <viewController id="hZi-tp-o1L" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="xtb-QL-ZcQ"/>
                         <viewControllerLayoutGuide type="bottom" id="ftu-f8-oJK"/>
@@ -18,32 +19,44 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IJX-dt-iV6">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <rect key="frame" x="4" y="0.0" width="592" height="600"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Uw7-0q-x3a">
-                                        <rect key="frame" x="0.0" y="0.0" width="600" height="1047"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Uw7-0q-x3a" userLabel="Content View">
+                                        <rect key="frame" x="0.0" y="0.0" width="592" height="1100"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iih-V0-S8T" userLabel="1View">
-                                                <rect key="frame" x="118" y="37" width="365" height="97"/>
+                                                <rect key="frame" x="114" y="37" width="365" height="97"/>
                                                 <color key="backgroundColor" red="1" green="0.43529412150000002" blue="0.81176471709999998" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="365" id="4Js-ih-zJQ"/>
                                                     <constraint firstAttribute="height" constant="97" id="fn8-7m-xz1"/>
                                                 </constraints>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="5Bt-e2-ia1" appends="YES" id="aYa-ly-Sul"/>
+                                                </connections>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FfQ-NP-Gr7" userLabel="2View">
-                                                <rect key="frame" x="118" y="142" width="365" height="97"/>
+                                                <rect key="frame" x="114" y="142" width="365" height="97"/>
                                                 <color key="backgroundColor" red="0.40000000596046448" green="0.40000000596046448" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <gestureRecognizers/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="97" id="XBQ-8R-RhS"/>
                                                     <constraint firstAttribute="width" constant="365" id="Z6n-FS-qmz"/>
                                                 </constraints>
                                             </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Z21-bh-VrR" userLabel="3View">
-                                                <rect key="frame" x="118" y="247" width="365" height="800"/>
+                                            <view contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Tjq-ue-xvp" userLabel="3View">
+                                                <rect key="frame" x="114" y="247" width="365" height="800"/>
+                                                <color key="backgroundColor" cyan="0.28620505439999999" magenta="0.0" yellow="0.0" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="800" id="3Ct-n8-s0d"/>
+                                                    <constraint firstAttribute="width" constant="365" id="LcV-Iq-j4S"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Z21-bh-VrR" userLabel="4View">
+                                                <rect key="frame" x="114" y="1060" width="365" height="40"/>
                                                 <color key="backgroundColor" red="0.0" green="0.50196081399917603" blue="0.50196081399917603" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="800" id="ZDx-9p-but"/>
+                                                    <constraint firstAttribute="height" constant="40" id="ZDx-9p-but"/>
                                                     <constraint firstAttribute="width" constant="365" id="n1I-kB-yj2"/>
                                                 </constraints>
                                             </view>
@@ -51,13 +64,15 @@
                                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstItem="iih-V0-S8T" firstAttribute="top" secondItem="Uw7-0q-x3a" secondAttribute="top" constant="37" id="GfC-Ld-IK2"/>
-                                            <constraint firstItem="Z21-bh-VrR" firstAttribute="top" secondItem="FfQ-NP-Gr7" secondAttribute="bottom" constant="8" id="JTe-TS-Tl9"/>
                                             <constraint firstAttribute="centerX" secondItem="Z21-bh-VrR" secondAttribute="centerX" id="MnI-j1-vZx"/>
                                             <constraint firstAttribute="centerX" secondItem="FfQ-NP-Gr7" secondAttribute="centerX" id="PXx-v6-PWD"/>
+                                            <constraint firstItem="Z21-bh-VrR" firstAttribute="top" secondItem="Tjq-ue-xvp" secondAttribute="bottom" constant="13" id="R9s-c8-qe8"/>
                                             <constraint firstAttribute="height" priority="250" constant="800" placeholder="YES" id="U8X-Ep-YEe"/>
+                                            <constraint firstItem="Tjq-ue-xvp" firstAttribute="top" secondItem="FfQ-NP-Gr7" secondAttribute="bottom" constant="8" id="V3V-wO-V5m"/>
                                             <constraint firstAttribute="centerX" secondItem="iih-V0-S8T" secondAttribute="centerX" id="iG3-5m-igX"/>
                                             <constraint firstAttribute="bottom" secondItem="Z21-bh-VrR" secondAttribute="bottom" id="kI0-0G-7i4"/>
                                             <constraint firstItem="FfQ-NP-Gr7" firstAttribute="top" secondItem="iih-V0-S8T" secondAttribute="bottom" constant="8" id="lpl-lA-6y2"/>
+                                            <constraint firstItem="Tjq-ue-xvp" firstAttribute="centerX" secondItem="Uw7-0q-x3a" secondAttribute="centerX" id="nVi-Qz-jn9"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -78,8 +93,16 @@
                             <constraint firstAttribute="trailingMargin" secondItem="IJX-dt-iV6" secondAttribute="trailing" constant="-16" id="zMR-0e-tPd"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="constrainViewTwoHeight" destination="XBQ-8R-RhS" id="JS2-Cd-djP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mkp-Av-TDu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="5Bt-e2-ia1" userLabel="View 1 Tap Gesture Recognizer">
+                    <connections>
+                        <action selector="viewOneTapped:" destination="hZi-tp-o1L" id="Af0-3i-CGX"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="403" y="1204"/>
         </scene>
